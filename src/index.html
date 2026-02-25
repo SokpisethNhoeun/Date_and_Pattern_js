@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="w-full m-auto  flex flex-col items-center justify-center mt-10 space-y-10">
+        <h1 class="text-[40px]">Time : Start | Stop | Clear </h1>
+        <p id="time-display" class="text-[40px]">00:00:00</p>
+
+        <div class="flex gap-3 mt-5 text-lg">
+            <button id="start" class="bg-blue-400 px-5 py-2 rounded-md">Start</button>
+            <button id="stop" class="bg-red-400 px-5 py-2 rounded-md">Stop</button>
+            <button id="reset" class="bg-green-400 px-5 py-2 rounded-md">Clear</button>
+        </div>
+        <h1 class="font-extrabold">Enter Phone Number (9-10) digit : (012 345 6789) </h1>
+        <input id="phone-number" type="text"
+            class="px-10 py-4 bg-gray-50 border border-gray-300 rounded-md outline-none"
+            placeholder="Enter your phone number" oninput="showValue(event)" />
+            <p id="error-message" class="text-red-500 uppercase hidden font-bold ">You can't submit please use your real phone number</p>
+        <button id="submit" class="bg-yellow-400 px-5 py-2 rounded-md "> Submit </button>
+
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+
+
+</body>
+
+</html>
